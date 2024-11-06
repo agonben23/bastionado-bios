@@ -1,0 +1,86 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Bastionado de una BIOS</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="bastionado-bios"
+                  title="Bastionado de una BIOS"
+                  environment="web"
+                  feedback-link="Un enlace en el que los usuarios puedan darte feedback (quizás creando un issue en un repositorio de git)">
+    
+      <google-codelab-step label="Introducción" duration="1">
+        <p>En este Colab profundizaremos sobre como acceder y bastionar la BIOS/UEFI del ordenador que estamos utilizando. Para este bastionado usaremos la BIOS del Lenovo Legion 5 15APH9.</p>
+<p>A continuación se encuentra un resumen de los puntos que veremos en este tutorial :</p>
+<ul>
+<li>Cómo configurar la contraseña de administración de la BIOS y del disco duro</li>
+<li>Cómo deshabilitar el arranque vía USB</li>
+<li>Cómo cambiar el orden de arranque del sistema</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Requisitos previos" duration="2">
+        <p>Para llevar a cabo las configuraciones se necesita acceder a la BIOS del equipo.</p>
+<p>Accedemos a la BIOS del equipo, siguiendo estos pasos:</p>
+<ul>
+<li>Reiniciamos o encendemos el equipo.</li>
+<li>Inmediatamente después de encender el equipo, presionamos repetidamente la tecla F2. Es importante que comiencemos a presionar la tecla rápidamente después de encender el portatil. Continuamos presionando F2 hasta que ingresemos a la pantalla de configuración de la BIOS/UEFI.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuración de contraseñas" duration="2">
+        <p>Para configurar la contraseña de administración de la BIOS y del disco duro, entramos la configuración de la BIOS presionando el botón &#34;More Setting&#34;.</p>
+<p class="image-container"><img src="img/e3d0d22f65f23361.png"></p>
+<p>Una vez dentro entramos en el apartado &#34;Security&#34; y seteamos las contraseñas de administración de la BIOS y del disco duro pulsando en las opciones &#34;Set Administration Password&#34; y &#34;Set Hard Disk Password&#34; respectivamente.</p>
+<p class="image-container"><img src="img/184a0815981a1c81.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuración de arranque vía USB" duration="2">
+        <p>Una buena opción para mejorar la seguridad de nuestro equipo es deshabilitar el arranque del equipo vía USB. Esto hace que no pueda realizarse ningún acceso no autorizado utilizando dispositivos USB bootables para extraer información sensible o instalar software malicioso.</p>
+<p>Para deshabilitar el arranque del equipo vía USB, entramos en el apartado &#34;Boot&#34; de la configuración de la BIOS y cambiamos la opción USB Boot de &#34;Enabled&#34; a &#34;Disabled&#34;</p>
+<p class="image-container"><img src="img/dac4a69966e61891.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuración del orden de arranque del sistema" duration="2">
+        <p>Para cambiar el orden de arranque del sistema volvemos a la pantalla inicial de la BIOS y cambiamos el orden en la opción &#34;Boot Mode&#34;.</p>
+<p class="image-container"><img src="img/674c200ed5582ec8.png"></p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

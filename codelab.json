@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2024-11-05T21:57:21+01:00",
+  "id": "bastionado-bios",
+  "duration": 9,
+  "title": "Bastionado de una BIOS",
+  "summary": "Bastionado de una BIOS",
+  "source": "/media/nicolas/PEN/bastionado-bios/codelab.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown"
+  ],
+  "tags": [
+    "web"
+  ],
+  "feedback": "Un enlace en el que los usuarios puedan darte feedback (quizás creando un issue en un repositorio de git)",
+  "url": "bastionado-bios"
+}
